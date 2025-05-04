@@ -1,7 +1,8 @@
 # Prediction-of-Product-Sales
-- Hisham Jarrar
 ## Introduction
 - sales prediction for food items sold at various stores
+--------
+- Author: Hisham Jarrar
 ### Description
 - sales prediction for food items sold at various stores. The goal of this is to help the retailer understand the properties of products and outlets that play crucial roles in increasing sales.
 
@@ -56,7 +57,10 @@
 
 ***As we can see in the heatmap, we have two positive correlations:***
 - ***Between Item_MRP and Item_Outlet_Sales, where the correlation is 0.54.***
-- ***Between Item_Weight and Outlet_Establishment_Year, where the correlation is  0.54.*** 
+- ***Between Item_Weight and Outlet_Establishment_Year, where the correlation is  0.54.***
+
+
+
 
 
 
