@@ -59,8 +59,70 @@
 - ***Between Item_MRP and Item_Outlet_Sales, where the correlation is 0.54.***
 - ***Between Item_Weight and Outlet_Establishment_Year, where the correlation is  0.54.***
 
+----
+# Modeling
 
+> - During the modeling process, we used the following models:
 
+	•	Linear Regression Model
+
+	•	Random Forest Model
+ 
+	•	Tuned Random Forest Model
+
+ ## Models Evaluated & Results
+ 
+- Linear Regression Model Results :
+  - (Training Data):
+    - MAE = 847.129
+    - MSE = 1,297,558.136
+    - RMSE = 1,139.104
+    - R^2 = 0.562
+  - (Test Data):
+    - MAE = 804.120
+    - MSE = 1,194,349.715
+    - RMSE = 1,092.863
+    - R^2 = 0.567
+
+- Random Forest Model Results :
+  - (Training Data):
+    - MAE = 296.383
+    - MSE = 182,992.934
+    - RMSE = 427.777
+    - R^2 = 0.938
+  - (Test Data):
+    - MAE = 767.103
+    - MSE = 1,215,476.625
+    - RMSE = 1,102.487
+    - R^2 = 0.559
+
+- Tuned Random Forest Model Results:
+  - (Training data):
+    - MAE = 756.226
+    - MSE = 1,154,413.205
+    - RMSE = 1,074.436
+    - R^2 = 0.610
+  - (Test Data):
+    - MAE = 730.396
+    - MSE = 1,103,475.652
+    - RMSE = 1,050.464
+    - R^2 = 0.600
+   
+  ----
+## Recommendation for the Tuned Random Forest Model
+- After evaluating multiple models and analyzing performance results on both the training and testing datasets, I recommend using the Tuned Random Forest Model. It offers the best balance and consistency between training and testing results, and also demonstrates the highest overall performance.
+
+- R-squared (R²) Metric
+  - We use this metric to understand how well the model makes predictions.
+    
+  - The R² value for the testing data is 0.60, which means the model is able to explain 60% of the changes in sales.
+
+- RMSE Metric
+  - We use this metric to express the accuracy of the predictions, as it represents the average amount of error between the actual values and the predicted values made by the model.
+    
+  - The RMSE for the testing data is $1050.46, which means the model makes an average error of about $1050.
+    
+  - I chose this metric because it is easy to interpret and also penalizes large prediction errors more heavily.
 
 
 
